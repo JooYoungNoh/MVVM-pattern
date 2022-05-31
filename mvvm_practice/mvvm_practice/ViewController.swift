@@ -71,13 +71,19 @@ class ViewController: UIViewController {
         print("setBinding")
         self.viewModel.$viewColor.sink{ (updatedList : UIColor) in
             self.tempArray = updatedList
+            self.myView.backgroundColor = self.tempArray
         }.store(in: &disposalbleBag)
     }
     
     @objc func sendChangeColor(_ sender: UIButton){
         
         self.viewModel.changeColor()
-        self.myView.backgroundColor = self.tempArray
+    
+        guard let nv = self.storyboard?.instantiateViewController(withIdentifier: "NextVC") as? NextVC else { return }
+        
+        nv.viewColor = self.tempArray
+        
+        self.navigationController?.pushViewController(nv, animated: true)
     }
 
 

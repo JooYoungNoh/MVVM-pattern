@@ -14,6 +14,7 @@
 		732745C328465A0F0003B662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732745C228465A0F0003B662 /* Assets.xcassets */; };
 		732745C628465A0F0003B662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732745C428465A0F0003B662 /* LaunchScreen.storyboard */; };
 		732745CE284660320003B662 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732745CD284660320003B662 /* ViewModel.swift */; };
+		732745D028467B1F0003B662 /* NextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732745CF28467B1F0003B662 /* NextVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		732745C528465A0F0003B662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		732745C728465A0F0003B662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		732745CD284660320003B662 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		732745CF28467B1F0003B662 /* NextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				732745BB28465A0E0003B662 /* SceneDelegate.swift */,
 				732745BD28465A0E0003B662 /* ViewController.swift */,
 				732745CD284660320003B662 /* ViewModel.swift */,
+				732745CF28467B1F0003B662 /* NextVC.swift */,
 				732745BF28465A0E0003B662 /* Main.storyboard */,
 				732745C228465A0F0003B662 /* Assets.xcassets */,
 				732745C428465A0F0003B662 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				732745BE28465A0E0003B662 /* ViewController.swift in Sources */,
 				732745BA28465A0E0003B662 /* AppDelegate.swift in Sources */,
 				732745CE284660320003B662 /* ViewModel.swift in Sources */,
+				732745D028467B1F0003B662 /* NextVC.swift in Sources */,
 				732745BC28465A0E0003B662 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
