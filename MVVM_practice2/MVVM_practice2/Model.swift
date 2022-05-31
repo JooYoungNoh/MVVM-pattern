@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Time: Decodable{
+    
+ let currentDateTime: String
+    
+}
