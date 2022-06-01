@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var viewModel = ViewModel()
+    
     let myLabel : UILabel = {
         let label = UILabel()
         label.text = "아직 정보가 없습니다."
@@ -38,7 +40,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       uiCreate()
+        uiCreate()
     }
     
     func uiCreate(){
@@ -53,13 +55,23 @@ class ViewController: UIViewController {
         ])
         
         self.view.addSubview(self.myButton)
+        self.myButton.addTarget(self, action: #selector(clickButton(_:)), for: .touchUpInside)
         
         self.myButton.topAnchor.constraint(equalTo: self.myLabel.bottomAnchor, constant: 20).isActive = true
         self.myButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         self.myButton.widthAnchor.constraint(equalToConstant: 80).isActive = true
         self.myButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        
     }
-
+    
+    @objc func clickButton(_ sender: UIButton){
+        viewModel.openAPI()
+        DispatchQueue.main.async {
+            sleep(2)
+            self.myLabel.text = self.viewModel.timeResult
+        }
+        
+    }
 
 }
 

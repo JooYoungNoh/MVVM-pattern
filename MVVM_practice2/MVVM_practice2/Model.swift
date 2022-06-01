@@ -7,8 +7,15 @@
 
 import Foundation
 
-struct Time: Decodable{
-    
- let currentDateTime: String
+struct Time: Codable{
+    let id: String?
+    let currentDateTime: String?
+    let utcOffset: String?
+    let isDayLightSavingsTime: Bool?
+    let dayOfTheWeek: String?
+    let timeZoneName: String?
+    let currentFileTime: Int?
+    let ordinalDate: String?
+    let serviceResponse: String?
     
 }
