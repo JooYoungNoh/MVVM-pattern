@@ -65,8 +65,9 @@ class ViewController: UIViewController {
     }
     
     @objc func clickButton(_ sender: UIButton){
-        viewModel.openAPI()
+        self.myLabel.text = self.viewModel.timeResult
         DispatchQueue.main.async {
+            self.viewModel.openAPI()
             sleep(2)
             self.myLabel.text = self.viewModel.timeResult
         }
